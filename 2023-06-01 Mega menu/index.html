@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="overlay">
+      <img src="img/menuclose.svg" class="close-btn" id="close-menu" alt="" />
+      <ul>
+        <li>
+          <a href="#">home</a>
+          <span>deneme home</span>
+        </li>
+        <li>
+          <a href="#">about</a>
+          <span>deneme about</span>
+        </li>
+        <li>
+          <a href="#">home</a>
+          <span>deneme home</span>
+        </li>
+        <li>
+          <a href="#">home</a>
+          <span>deneme home</span>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <a href="#" class="logo">my site</a>
+      <img src="img/menuhamburger.svg" class="menu-btn" id="open-menu" alt="" />
+    </header>
+    <section>
+      <h1>this is fantacs</h1>
+    </section>
+    <script>
+      var overlay = document.getElementById('overlay');
+      var closeMenu = document.getElementById('close-menu');
+      document.getElementById('open-menu').addEventListener('click',function(){
+        overlay.classList.add('show-menu');
+      });
+      document.getElementById('close-menu').addEventListener('click',function(){
+        overlay.classList.remove('show-menu');
+      });
+    </script>
+  </body>
+</html>
